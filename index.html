@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,29 @@
     
 </head>
 <body>
-    <h1>sign up </h1>
-<div>
-<input id="nom" type="text" placeholder="Nom">
-<input id="email" type="text" placeholder="Email">
-<input id="mot de passe" type="password" placeholder="Mot de passe">
-<button id="btn">inscription</button>
-<a href="login.html">Déjà inscrit ? Connecte-toi ici</a>
-</div>
+    <div class="container">
+        <h1 id="main-title">Inscription</h1>
+
+        <div id="signup-section">
+            <input id="nom" type="text" placeholder="Nom">
+            <input id="email" type="text" placeholder="Email">
+            <div class="password-group">
+                <input id="mot de passe" type="password" placeholder="Mot de passe">
+                <button id="toggle-password-signup" type="button" class="password-toggle" aria-label="Afficher le mot de passe"></button>
+            </div>
+            <button id="btn" type="button">Inscription</button>
+            <a href="#" id="show-login">Déjà inscrit ? Connecte-toi ici</a>
+        </div>
+        <div id="login-section" class="hidden">
+            <input id="login-email" type="text" placeholder="Email">
+            <div class="password-group">
+                <input id="login-password" type="password" placeholder="Mot de passe">
+                <button id="toggle-password-login" type="button" class="password-toggle" aria-label="Afficher le mot de passe"></button>
+            </div>
+            <button id="login-btn" type="button">Connexion</button>
+            <a href="#" id="show-signup">Pas encore de compte ? Inscris-toi</a>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
